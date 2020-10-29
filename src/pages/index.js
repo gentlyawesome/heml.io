@@ -130,9 +130,7 @@ class IndexPage extends Component {
             </Button>
           </section>
           <section>
-            {
-              /* Add Image or GIF */
-            }
+              <img src={ require('./../assets/logo-name.png') } />
           </section>
         </Hero>
         <Footer />
