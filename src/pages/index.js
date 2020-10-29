@@ -8,7 +8,7 @@ import ProgramWindow from '../components/ProgramWindow'
 
 const Hero = styled.div`
   z-index: 1;
-  background-image: linear-gradient(
+background-image: linear-gradient(
     120deg,
     ${props => props.theme.colors.primary} 0%,
     #68b8fe 100%
@@ -120,54 +120,21 @@ class IndexPage extends Component {
         <Header currentPath={this.props.location.pathname} fixed />
         <Hero>
           <section>
-            <h2>Quickly craft clean, responsive emails</h2>
+            <h2>Hello, Crescendo</h2>
             <h3>
-              HEML is an open source markup language for building responsive
-              email. It gives you the native power of HTML without having to
-              deal with all of the email quirks. HEML makes building emails as
-              easy as building websites.
+              Crescendo is an online game protal that operates on blockchain and crypto. We provide Crexcoin to players and be converted to any crypto
+              in the market. We provide competitive arcade game and get prices from our store. This prices can be bought through Crexcoin.
             </h3>
             <Button to="/docs/getting-started/guide" large>
               Get Started
             </Button>
-            <Button to="/docs/getting-started/overview" large transparent>
-              Docs
-            </Button>
           </section>
           <section>
-            <ProgramWindow title="welcome.heml">
-              <Editor
-                value={previewHEML}
-                setOptions={{ minLines: 20, maxLines: 20 }}
-                onChange={html => localStorage.setItem('homeEditor', html)}
-              />
-              <PreviewButton to="/editor#homeEditor">Preview</PreviewButton>
-            </ProgramWindow>
+            {
+              /* Add Image or GIF */
+            }
           </section>
         </Hero>
-        <Philosophy>
-          <div>
-            <h3>Native Feel</h3>
-            <p>
-              Do you know HTML and CSS? Check out our docs and you're off to the
-              races! No special rules or styling paradigms to master.
-            </p>
-          </div>
-          <div>
-            <h3>Forward Thinking</h3>
-            <p>
-              HEML is designed to take advantage of all that email can do while
-              still providing a solid experience for all clients.{' '}
-            </p>
-          </div>
-          <div>
-            <h3>Extendable</h3>
-            <p>
-              You can create your own powerful elements and style rules. Share
-              them with the world, or keep em to yourself. Your choice.
-            </p>
-          </div>
-        </Philosophy>
         <Footer />
       </div>
     )

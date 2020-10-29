@@ -84,8 +84,10 @@ export default ({ currentPath, fixed, nav }) => (
   <Offset fixed={fixed}>
     <Header fixed={fixed}>
       <Logo>
-        <Link to="/">&lt;heml&gt;</Link>
+        <Link to="/">Crescendo</Link>
       </Logo>
+      {
+        /*  
       {!nav ? (
         <ul>
           <li>
@@ -130,6 +132,8 @@ export default ({ currentPath, fixed, nav }) => (
       ) : (
         nav
       )}
+        */
+      }
     </Header>
   </Offset>
 )
