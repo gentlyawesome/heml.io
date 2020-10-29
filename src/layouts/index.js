@@ -19,7 +19,7 @@ const theme = {
 
 const DefaultLayout = ({ children }) => (
   <div>
-    <Helmet title="HEML" />
+    <Helmet title="Crescendo" />
     <ThemeProvider theme={theme}>{children()}</ThemeProvider>
   </div>
 )
