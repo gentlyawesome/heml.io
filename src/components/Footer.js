@@ -12,7 +12,6 @@ const Content = styled.div`
 export default () => (
   <Footer>
     <Content>
-      <div>Made with ❤️ by <a href="https://twitter.com/SparkPost">@SparkPost</a></div>
     </Content>
   </Footer>
 )
